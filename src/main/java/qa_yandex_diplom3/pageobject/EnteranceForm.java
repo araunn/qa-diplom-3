@@ -71,6 +71,7 @@ public class EnteranceForm {
        	items.get(1).sendKeys(password);
     	items.get(0).sendKeys(email);
     	driver.findElement(enterButtonOnPersonArea).click();
+    	new WebDriverWait(driver, 5);
     }
 	
     public WebElement getCreateOrderButton() {
